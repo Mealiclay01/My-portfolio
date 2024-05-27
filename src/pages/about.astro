@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Anas Rhimi" description="About Anas Rhimi">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Anas Rhimi at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I am a passionate software engineer enthusiast with a strong foundation in C, C++, and Go (Golang). My journey in programming began with these languages, allowing me to develop efficient and high-performance applications. Alongside my expertise in low-level programming, I have honed my skills in web development, mastering HTML, CSS, JavaScript, SQL, and PHP. This combination of front-end and back-end knowledge enables me to create dynamic, responsive, and robust web applications.
+					</p>
+					<p>
+						Throughout my learning journey, I have worked on several projects that have helped me apply my skills in real-world scenarios. One of my notable projects is eDoc, a platform for booking appointments with doctors. This project involved creating a user-friendly interface for patients and doctors, implementing secure login functionalities, and managing appointments and histories efficiently. The experience gained from this project has been invaluable in understanding the intricacies of full-stack development and the importance of user experience.
+					</p>
+					<p>
+						My commitment to continuous learning and innovation drives me to tackle new challenges and contribute meaningfully to the tech community. I am excited about the opportunities that lie ahead and am eager to bring my skills and enthusiasm to new challenges. My goal is to become a proficient software engineer or backend developer, where I can make meaningful contributions to the tech community and create impactful software solutions.
+					</p>
+					
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+<div class="content">
+    <p>
+        I completed my Baccalaureate (Bac) in 2021 at Lycée Bouchaib Doukkali in Morocco, specializing in Economics. Afterward, I studied for two years at the National School of Commerce and Management (ENCG) before deciding to change my career path.
+    </p>
+    <p>
+        Currently, I am pursuing a degree in software engineering at 1337 (UM6P). This journey has been instrumental in shaping my skills and preparing me for a successful career in software engineering.
+    </p>
+</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+<div class="content">
+    <ul>
+        <li>Proficient in C, C++, Go (Golang)</li>
+        <li>Strong knowledge of HTML, CSS, JavaScript</li>
+        <li>Experience with SQL and PHP</li>
+        <li>Familiarity with front-end frameworks like React</li>
+        <li>Knowledge of software development methodologies such as Agile</li>
+        <li>Ability to work in a team and communicate effectively</li>
+        <li>Problem-solving and analytical skills</li>
+        <li>Continuous learner, keeping up-to-date with the latest technologies</li>
+    </ul>
+</div>
+
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
