@@ -1,3 +1,3 @@
 # This is My portfolio
 
-https://anas-rhimi.netlify.app
+https://anasrhimi.netlify.app
