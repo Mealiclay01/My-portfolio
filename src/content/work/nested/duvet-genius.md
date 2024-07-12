@@ -6,7 +6,7 @@ img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
 
 tags:
-   - Design
+  - Design
   - Dev
   - User Testing
   - Golang
