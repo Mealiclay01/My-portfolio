@@ -12,5 +12,4 @@ tags:
   - Golang
   - SQL
 ---
-
  This project involves the creation of a fast food restaurant website with a focus on modern design and user-friendly features. The website allows customers to order food for delivery, book tables for dine-in, and easily find contact information. The project showcases a seamless integration of various functionalities aimed at enhancing the customer experience.
