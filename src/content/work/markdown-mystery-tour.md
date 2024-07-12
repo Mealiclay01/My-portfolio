@@ -1,5 +1,5 @@
 ---
-title: Markdown Mystery Tour
+title: Fast food Website
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
@@ -8,9 +8,9 @@ description: |
 tags:
   - Design
   - Dev
-  - User Testing
-  - Golang
-  - SQL
+  - CSS
+  - HTML
+  - JAVASCRIPT
 ---
 
-This is my Web project written in go. It's a web server for outputting the text in a graphic representation of ASCII and dowloading a file with it.  Ascii-art-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user interface) version of a program that outputs text in a graphical representation of ASCII
+This project involves the creation of a fast food restaurant website with a focus on modern design and user-friendly features. The website allows customers to order food for delivery, book tables for dine-in, and easily find contact information. The project showcases a seamless integration of various functionalities aimed at enhancing the customer experience.
